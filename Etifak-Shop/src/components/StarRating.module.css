@@ -1,0 +1,15 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.starRating {
+    cursor: pointer;
+    color: orange;
+    width: fit-content;
+    font-size: .7em; /* Adjust size as needed */
+}
+  

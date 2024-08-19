@@ -1,0 +1,55 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.container {
+    font-size: 1.7em;
+    
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+.cartContainer{
+    color: var(--federal-blue);
+    border-radius: .3em;
+    padding: .3em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 .05em var(--federal-blue);
+
+}
+
+.textPart {
+    
+    border-right: solid .01em;
+    padding-right: .5em;
+    padding-left: .2em;
+}
+
+.iconPart{
+    border-left: solid .01em;
+    padding-left: .5em;
+    padding-right: .2em;
+}
+
+.cartContainer:hover {
+    color: var(--white);
+    background-color: var(--federal-blue);
+}
+
+/* Responsive layout: change to column layout when screen width is smaller */
+@media (max-width: 870px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to start in column layout */
+    }
+
+    .textPart, .iconPart {
+        border: none; /* Remove borders in the responsive layout */
+        padding: .2em 0; /* Adjust padding */
+    }
+}

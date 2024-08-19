@@ -1,0 +1,72 @@
+:root {
+  --red-crayola: #EF004Fff;
+  --federal-blue: #09005Dff;
+  --lavender-web: #EAEAFCff;
+  --majorelle-blue: #5141E7ff;
+  --white: #FFFFFFff;
+}
+
+
+/* Slider.module.css */
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 40%;
+  height:5em;
+  overflow: hidden;
+}
+  
+.navButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: var(--white);
+  background-color: var(--federal-blue);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+  
+.navButton:hover {
+  background-color: var(--red-crayola);
+}
+
+.prevButton {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+}
+
+.nextButton {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+  overflow: hidden;
+  width: 100%;
+}
+  
+.imageSelection {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  margin: 0 5px; /* Adjust spacing as needed */
+  cursor: pointer;
+  border-radius: .7em;
+  border: solid .05em var(--federal-blue);
+  transition: all ease-in-out .2s;
+}
+
+.selectedImage {
+  height: 60px;
+  width: 60px;
+}

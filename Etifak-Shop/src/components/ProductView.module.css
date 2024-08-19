@@ -1,0 +1,23 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.leftGridItem {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.rightGridItem {
+  grid-area: 1 / 2 / 2 / 3;
+}

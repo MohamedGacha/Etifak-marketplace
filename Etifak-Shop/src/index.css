@@ -1,0 +1,14 @@
+:root {
+  --red-crayola: #EF004Fff;
+  --federal-blue: #09005Dff;
+  --lavender-web: #EAEAFCff;
+  --majorelle-blue: #5141E7ff;
+  --white: #FFFFFFff;
+}
+
+body {
+  background-color: var(--lavender-web);
+  padding: 0%;
+  margin: 0%;
+  font-family: Calibri, Courier, monospace;
+}

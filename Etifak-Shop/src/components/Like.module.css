@@ -1,0 +1,27 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.likeButton{
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: var(--white);
+    color: var(--federal-blue);
+    cursor: pointer;
+}
+
+
+
+.solidHeart{
+    color: var(--red-crayola);
+}

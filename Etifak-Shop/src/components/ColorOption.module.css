@@ -1,0 +1,47 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5em !important;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--federal-blue) 0.01em;
+    
+    border-radius: 100em;
+
+    padding-inline: .5em;
+    margin-inline: .2em;
+    margin-block: .2em;
+    display: inline-flex;  
+    align-items: center;
+
+    cursor: pointer;
+
+
+}
+
+.selected {
+    background-color: var(--lavender-web);
+}
+
+.square {
+    border: solid var(--federal-blue) 0.01em;
+    border-radius: 0.2em;
+    padding: 0;
+    margin-right: 0.2em;
+    line-height: 1;
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    display: inline-flex;            /* Align content inside the square */
+    align-items: center;             /* Center the icon vertically */
+    justify-content: center;         /* Center the icon horizontally */
+    box-sizing: content-box;         /* Ensure the border wraps tightly around the icon */
+  }

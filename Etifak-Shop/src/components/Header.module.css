@@ -1,0 +1,63 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+.container{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    padding: 1rem;
+
+}
+.title {
+    color: var(--federal-blue);
+    font-size: 1.3em;
+    font-weight: 1000;
+    margin-right: 2%;
+}
+
+.priceContainer{
+    gap: 0;
+    margin-right: auto;
+}
+.priceContainer *{
+    color: var(--federal-blue);
+}
+
+.priceItemHighlighted {
+    color: var(--red-crayola);
+    font-size: 1.3em;
+}
+
+.priceItemBold {
+    font-weight: bold;
+}
+.bigUnit {
+    font-size:smaller;
+    font-weight: lighter;
+}
+.smallUnit{
+    font-size:smaller;
+}
+
+.subPriceItem {
+    font-size:.8em;
+    font-weight: lighter;
+}
+
+.deliveryInfo {
+    font-size: .9em;
+}
+
+.exw {
+    border: solid .1em;
+    border-radius: .3em;
+    margin-left: 0.3em;
+    padding: .1em;
+}
+

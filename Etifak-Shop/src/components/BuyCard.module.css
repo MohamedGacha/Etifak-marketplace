@@ -1,0 +1,108 @@
+:root {
+    --red-crayola: #EF004Fff;
+    --federal-blue: #09005Dff;
+    --lavender-web: #EAEAFCff;
+    --majorelle-blue: #5141E7ff;
+    --white: #FFFFFFff;
+}
+
+
+.container {
+    background-color: var(--white);
+    height: fit-content;
+    border-radius: 1em;
+    padding: 20px;
+
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.topDiv {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.topLeftDiv { 
+    grid-area: 1 / 1 / 2 / 2;
+    line-height: 1;
+}
+
+.topRightDiv {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 3em;
+    color: var(--majorelle-blue);
+    aspect-ratio: 1/1;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomDiv {
+    grid-area: 2 / 1 / 3 / 2; 
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.title {
+    color: var(--federal-blue);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.productRef {
+    font-size: .7em;
+    color: grey;
+}
+
+.refPart {
+    font-weight: bold;
+}
+
+.vendorLink {
+    color: var(--federal-blue);
+    font-size: 1em;
+}
+
+.starRating {
+    margin-top: .3em;
+    font-size: .8em !important;
+}
+
+.bottomLeftDiv {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.bottomRighttDiv {
+    grid-area: 1 / 2 / 2 / 3;
+    line-height: 0em;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oldPrice {
+    color: grey;
+    font-style: oblique;
+    text-decoration: line-through dashed;
+    width: fit-content;
+}
+
+

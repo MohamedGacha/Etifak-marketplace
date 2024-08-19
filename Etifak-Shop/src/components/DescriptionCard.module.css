@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 1em;
+    background-color: var(--white);
+    overflow: hidden; /* Ensures content does not overflow during animation */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.title {
+    color: var(--federal-blue);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.upDownButton {
+    font-size: 1.5em;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--majorelle-blue);
+}
+
+.content {
+    font-size: 1.3em;
+    color: var(--federal-blue);
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    gap: 10px; /* Space between items */
+    transition: all 0.3s ease-in-out; /* Smooth animation for height and opacity */
+    overflow: hidden; /* Hide overflow content during animation */
+    max-height: 0; /* Start with zero height when collapsed */
+    opacity: 0; /* Start with zero opacity when collapsed */
+}
+
+.contentExpanded {
+    max-height: 1000px; /* Set a large enough height to accommodate content when expanded */
+    opacity: 1; /* Set opacity to full when expanded */
+    padding: 20px; /* Optional padding around the content */
+}
+
+.contentCollapsed {
+    max-height: 0; /* Zero height when collapsed */
+    opacity: 0; /* Zero opacity when collapsed */
+}

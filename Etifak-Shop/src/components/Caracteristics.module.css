@@ -1,0 +1,26 @@
+.container {
+}
+  
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.table th,
+.table td {
+    text-align: center;
+}
+  
+.table th {
+    background-color: var(--lavender-web);
+    color: var(--majorelle-blue);
+    font-weight: light;
+}
+  
+.table tr:nth-child(even) {
+    background-color: var(--lavender-web);
+}
+  
+.table tr:nth-child(odd) {
+    background-color:  var(--white);
+}
