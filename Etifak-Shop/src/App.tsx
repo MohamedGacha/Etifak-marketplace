@@ -35,7 +35,7 @@ function App() {
       price: productPrice,
       oldPrice: oldProductPrice,
       rating: 4.5,
-      mode: mode, // Set the mode here
+      mode: mode,
     };
   });
 

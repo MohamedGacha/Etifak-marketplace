@@ -41,7 +41,6 @@
     transition: transform 0.3s ease, z-index 0.3s ease;
     border-radius: 1em;
     aspect-ratio: 1 / 1;
-    /* Adjust default styles */
 }
   
 .expandedImage {

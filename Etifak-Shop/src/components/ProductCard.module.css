@@ -56,8 +56,9 @@
 }
 
 .expandedImage {
+    position: fixed;
     transform: scale(1.5);
-    z-index: 10000 !important;
+    z-index: 10 !important;
     position: fixed;
     top: 20vh;
     left: 50%;

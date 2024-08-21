@@ -135,7 +135,7 @@
     align-items: center;
     text-align: center;
     background-color: var(--white);
-    border-radius: 10em;
+    border-radius: 100em;
 }
 
 .socialIcon {
@@ -151,4 +151,73 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .companyLinks,
+    .legalLinks,
+    .contactLinks {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .socials {
+        padding-top: 20px;
+        border-top: 2px solid var(--white);
+    }
+
+    .coords {
+        width: 100%;
+        text-align: center;
+    }
+
+    .location,
+    .phone {
+        justify-content: center;
+    }
+
+    .copyRight {
+        padding-top: 20px;
+    }
+
+    .socialLink {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .socialsLinks {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .follow {
+        width: 100%;
+    }
+
+    .followText {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        text-align: center;
+    }
 }
