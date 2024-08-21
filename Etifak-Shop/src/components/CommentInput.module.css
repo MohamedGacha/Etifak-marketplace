@@ -1,0 +1,67 @@
+.container {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.profileDiv {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.textfieldDiv {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.submitDiv {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.textareaFixedSize {
+    resize: none !important;
+
+    background-color: var(--lavender-web);
+    border-radius: .3em;
+}
+.profileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.textareaFixedSize:focus{
+    outline: none;
+    background-color: var(--lavender-web);
+
+}
+.youText {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline-start: 1em;
+    color: var(--federal-blue);
+    font-size: 2em;
+}
+
+.submitBtn {
+    background-color: #028202;
+    padding-inline: 25px;
+}
+
+.submitBtn:hover{
+    background-color: var(--federal-blue);
+}
+
+.rating {
+    font-size: 1.5em;
+}

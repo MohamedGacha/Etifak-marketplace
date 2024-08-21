@@ -1,0 +1,74 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.filter{
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: var(--white);
+    
+    border-radius: 1em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    width: 100%;
+    color: var(--majorelle-blue);
+    padding: 20px 20px 0px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.comments {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--white);
+    border-radius: 1em;
+    padding-inline: 40px;
+}
+
+.Commentitle {
+    
+    width: 100%;
+    color: var(--federal-blue);
+    padding: 20px 20px 0px 0px;
+    margin-left: -15px;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.filterStar {
+    font-size: .7em;
+    padding-block:3px ;
+    color: orange;
+}
+
+.starContainer {
+    margin: 0em 1em 1em 1em;
+    width: 73%;
+    height: fit-content;
+}
+
+.selected {
+  color: var(--lavender-web);
+}
+
+.commentsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.borderDiv {
+    border-bottom: 3px solid var(--federal-blue);
+    width: 80%;
+    margin: 10px auto; 
+    margin-bottom:40px;
+    
+}
+.commentRow:last-child {
+    border-bottom: none;
+}

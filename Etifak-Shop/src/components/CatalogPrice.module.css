@@ -1,25 +1,27 @@
-
-.container{
+.container {
     background-color: var(--white);
     width: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 1rem;
-
 }
+.priceItemFederalBlue {
+  color: var(--majorelle-blue) !important;
+}
+  
 .title {
-    color: var(--federal-blue);
+    color: var(--majorelle-blue);
     font-size: 1.3em;
     font-weight: 1000;
     margin-right: 2%;
 }
-
-.priceContainer{
+  
+.priceContainer {
     gap: 0;
     margin-right: auto;
 }
-.priceContainer *{
-    color: var(--federal-blue);
+.priceContainer * {
+    color: var(--majorelle-blue);
 }
 
 .priceItemHighlighted {
@@ -30,34 +32,37 @@
 .priceItemBold {
     font-weight: bold;
 }
+
 .bigUnit {
-    font-size:smaller;
+    font-size: smaller;
     font-weight: lighter;
 }
-.smallUnit{
-    font-size:smaller;
+
+.smallUnit {
+    font-size: smaller;
 }
 
 .decreaseIcon {
+    
+    color: var(--federal-blue) !important;
     font-size: large !important;
 }
 
 .subPriceItem {
-    font-size:.8em;
+    font-size: 0.8em;
     font-weight: lighter;
 }
 
 .deliveryInfo {
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .exw {
-    border: solid .1em;
-    border-radius: .3em;
+    border: solid 0.1em;
+    border-radius: 0.3em;
     margin-left: 0.3em;
-    padding: .1em;
+    padding: 0.1em;
 }
-
 
 .oldPrice {
     color: grey;
@@ -67,6 +72,8 @@
 }
 
 .priceItemDecrease {
-  color: var(--federal-blue);
-}
+    color: var(--majorelle-blue);
+    font-weight: bold;
 
+}
+  

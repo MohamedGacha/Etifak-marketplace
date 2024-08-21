@@ -42,8 +42,9 @@ const BuyCard = ({ productID }: BuyCardProps) => {
       </div>
       <div className={BuyCardCSS.bottomDiv}>
         <div className={BuyCardCSS.bottomLeftDiv}>
-          <div className={BuyCardCSS.oldPrice}>USD {oldPrice}</div>
-          <HeaderPrice>{productPrice}</HeaderPrice>
+          <HeaderPrice mode={"discount"} oldPrice={399.99}>
+            {productPrice}
+          </HeaderPrice>
         </div>
         <div className={BuyCardCSS.bottomRighttDiv}>
           <ShopButtons

@@ -1,0 +1,12 @@
+.footerContent {
+    background-color: var(--federal-blue); /* Deep blue background */
+    color: #ffffff; /* White text color */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+

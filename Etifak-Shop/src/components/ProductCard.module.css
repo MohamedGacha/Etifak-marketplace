@@ -1,0 +1,117 @@
+
+
+.container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1em;
+    margin: .3em;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+.container:hover{
+    transform: scale(1.01);
+}
+  
+.productImage {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    aspect-ratio: 1 / 1;
+}
+
+.discount {
+    color: var(--white);
+    background-color: var(--red-crayola);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+}
+
+.likePos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.expandPos {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.cartContainer {
+    position: absolute;
+    bottom: 165px;
+    background-color: var(--white);
+    right: 30px;
+}
+
+.expandedImage {
+    transform: scale(1.5);
+    z-index: 10000 !important;
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.productTitle {
+    margin-top: 1rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--majorelle-blue);
+}
+
+.priceContainer {
+    margin-top: 0.5rem;
+}
+
+.oldPrice {
+    color: grey;
+    font-style: oblique;
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+
+.priceItem {
+    color: var(--majorelle-blue);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.decreaseMode {
+    color: var(--federal-blue);
+}
+
+.decreaseIconContainer {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.decreaseIcon {
+    color: var(--federal-blue); 
+    font-size: 1.5em;
+}
+  

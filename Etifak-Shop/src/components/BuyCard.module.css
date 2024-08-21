@@ -98,11 +98,4 @@
     justify-content: center;
 }
 
-.oldPrice {
-    color: grey;
-    font-style: oblique;
-    text-decoration: line-through dashed;
-    width: fit-content;
-}
-
 

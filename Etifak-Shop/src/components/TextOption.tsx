@@ -1,19 +1,19 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import ColorOptionCSS from "./ColorOption.module.css";
 
 interface TextOptionProps {
-  children: string;
+  children: ReactNode;
   className?: string;
   selected?: boolean;
   onClick?: () => void;
 }
 
-const TextOption = ({
+const TextOption: React.FC<TextOptionProps> = ({
   children,
   className,
   selected,
   onClick,
-}: TextOptionProps) => {
+}) => {
   return (
     <span
       onClick={onClick}

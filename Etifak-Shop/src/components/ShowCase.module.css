@@ -1,0 +1,70 @@
+.bigContainer {
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 1em;
+    margin-block: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    gap: 1rem; 
+}
+
+
+.title {
+  top: 10px;
+  left: 10px;
+  font-size: 1.7em;
+  color: var(--majorelle-blue);
+  font-weight: light;
+  z-index: 10; 
+}
+
+.sliderContainer {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cardsContainer {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 100% !important;
+}
+
+.prevButton,
+.nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: var(--majorelle-blue);
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+    width: 5%;
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.prevButton:disabled,
+.nextButton:disabled {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+    
+    height: fit-content;
+    width: fit-content;
+    transition: transform 0.3s ease;
+}
